@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css" class="css">
+	<title>Document</title>
+	<script>
+function myF(){
+    var a = document.getElementById("phone").value;
+     if(a==null || a==""){
+    	alert("Введите номер");
+    }else{
+    localStorage.setItem("a",a);
+    window.location = "privyazka2.html";
+    }
+}
+</script>
+<body>
+	<img src="img/logo.svg" alt=logo" class="logo">
+	<section>
+		<div class="container">
+		<div class="top_menu">
+			<p class="top_menu__item">Заявки</p>
+			<p class="top_menu__item">Услуги</p>
+			<p class="top_menu__item">Поддержка</p>
+			<p class="top_menu__item">Настройки</p>
+			<div class="tab"></div>
+		</div>
+		</div>
+	</section>
+	<section>
+		<div class="container2">
+		<div class="left_menu">
+
+			<p class="left_menu__item">Пользователи</p>
+			<p class="left_menu__item"><a class="index" href="index.html">Данные QIWI кошелька</a></p>	
+			<div class="left_menu__substrate"></div>
+     	</div>
+	</div>
+	</section>
+	<section>
+		<div class="container3">
+		<div class="warning">
+			<img src="img/warning.svg" alt="" class="warning_img">
+			<p class="warning_text">Для работы с услугой «Именной кошелек» вы должны иметь статус идентифицированного пользователя <br> «Основной» или «Профессиональный» 
+- в сервисе QIWI Кошелек, подробнее в оферте и на qiwi.com.</p>
+		</div>
+	    </div>
+     </section>
+	<section>
+        <div class="container4">
+        	<div class="center_block">
+        		<h1 class="maintitle">Привязать QIWI Кошелёк</h1>
+        		<p class="hint">Привязанная почта</p>
+        		<p class="email">admin@site.ru</p>
+        		<br>
+        		<br>
+        		<br>
+        		<form action="privyazka2.html" method="GET">
+        		<div className='input-wrapper'>
+                     <input name="phone" id="phone" placeholder='Телефон'/>
+                </div>
+        	    <!-- <span contenteditable class="phone">Телефон</span> -->
+        	    <p class="hint">Привязываемый номер QIWI Кошелька</p>
+        	    <button type="submit" class="addphone" onClick="myF()">Далее</button>
+        	    </form>
+        	</div>
+        </div>
+	</section>
+	
+</body>
+</html>

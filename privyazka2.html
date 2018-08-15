@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css" class="css">
+	<title>Document</title>
+	<script type="text/javascript">
+window.onload=function()
+{
+var a = localStorage.getItem("a");
+document.getElementById("phone").value = a;
+} 
+</script>
+</head>
+<body>
+	<img src="img/logo.svg" alt=logo" class="logo">
+	<section>
+		<div class="container">
+		<div class="top_menu">
+			<p class="top_menu__item">Заявки</p>
+			<p class="top_menu__item">Услуги</p>
+			<p class="top_menu__item">Поддержка</p>
+			<p class="top_menu__item">Настройки</p>
+			<div class="tab"></div>
+		</div>
+		</div>
+	</section>
+	<section>
+		<div class="container2">
+		<div class="left_menu">
+
+			<p class="left_menu__item">Пользователи</p>
+			<p class="left_menu__item"><a class="index" href="index.html">Данные QIWI кошелька</a></p>	
+			<div class="left_menu__substrate"></div>
+     	</div>
+	</div>
+	</section>
+	<section>
+		<div class="container3">
+		<div class="warning">
+			<img src="img/warning.svg" alt="" class="warning_img">
+			<p class="warning_text">Для работы с услугой «Именной кошелек» вы должны иметь статус идентифицированного пользователя <br> «Основной» или «Профессиональный» 
+- в сервисе QIWI Кошелек, подробнее в оферте и на qiwi.com.</p>
+		</div>
+	    </div>
+	</section>
+	<section>
+        <div class="container4">
+        	<div class="center_block">
+        		<h1 class="maintitle">Привязать QIWI Кошелёк</h1>
+        		<p class="hint">Привязанная почта</p>
+        		<p class="email">admin@site.ru</p>
+        		<br>
+        		<br>
+        		<br>
+        		<div className='input-wrapper'>
+                     <input id="phone" placeholder='Телефон'/>
+                </div>
+        	    <!-- <span contenteditable class="phone">Телефон</span> -->
+        	    <p class="hint">Привязываемый номер QIWI Кошелька</p>
+        	   
+        	</div>
+        </div>
+	</section>
+	<section>
+		<div class="container5">
+			<div class="sms_block">
+				<h1 class="maintitle">Для подтверждения вам отправлено SMS с одноразовым кодом
+				</h1>
+				<div className='input-wrapper'>
+                     <input id="codenum" placeholder='Код'/>
+                </div>
+        	    <!-- <span contenteditable class="phone">Телефон</span> -->
+        	    <p class="hint"><a href="#">Отправить повторно</a></p>
+        	    <button type="submit" class="addphone" onclick="onclickButton()">Подтвердить</button>
+        	    <p class="red">код 6666 — для перехода на страницу с номером без идентификации</p>
+			</div> 
+		</div> 
+	</section>
+	<script>
+function onclickButton() {
+    var a = document.getElementById("phone").value;
+  var code = document.getElementById('codenum').value;
+   if(a==null || a==""){
+    	alert("Введите номер");
+    }else{
+    	if (code==null || code=="") {
+        alert("Введите код");
+    	}else{
+
+             if (code=='6666') {
+             window.open("no_ident.html","_self");
+             }else{
+            	window.open("success_page.html","_self");
+  	  }
+  	}
+  }
+}
+</script>
+</body>
+</html>

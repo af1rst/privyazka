@@ -1,0 +1,242 @@
+@import url('https://nomail.com.ua/files/woff/1913b09835e902f7123ad3ac38b4cd93.woff');
+@import url('https://nomail.com.ua/files/woff/bcd826b1e90968390490c28037857940.woff');
+@import url('https://nomail.com.ua/files/woff/02f7d6b8e3cda79742b374cbc5595a8f.woff');
+@import url('https://nomail.com.ua/files/woff/afaa72e9edea309092b444be9479f487.woff');
+@import url('https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff');
+
+/*@font-face { font-family: 'MuseoSansCyrl-100';  src: local('MuseoSansCyrl-100'), url('https://nomail.com.ua/files/woff/1913b09835e902f7123ad3ac38b4cd93.woff') format('woff'); }
+@font-face { font-family: 'MuseoSansCyrl-300';  src: local('MuseoSansCyrl-300'), url('https://nomail.com.ua/files/woff/bcd826b1e90968390490c28037857940.woff') format('woff'); }
+@font-face { font-family: 'MuseoSansCyrl-500';  src: local('MuseoSansCyrl-500'), url('https://nomail.com.ua/files/woff/02f7d6b8e3cda79742b374cbc5595a8f.woff') format('woff'); }
+@font-face { font-family: 'MuseoSansCyrl-700';  src: local('MuseoSansCyrl-700'), url('https://nomail.com.ua/files/woff/afaa72e9edea309092b444be9479f487.woff') format('woff'); }
+@font-face { font-family: 'MuseoSansCyrl-900';  src: local('MuseoSansCyrl-900'), url('https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff') format('woff'); }
+*/
+body{
+	background: #F5F5F5;
+	padding: 0;
+	margin: 0;
+	height: 1250px;
+    
+}
+
+div {
+	box-sizing: border-box;
+}
+
+p {
+	padding-left: 44px;
+}
+.logo{
+	position: absolute;
+width: 132.96px;
+height: 46.49px;
+left: 57px;
+top: 16px;
+}
+
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+	/*border: 2px solid red;*/
+	height: 150px;
+	margin-top: 16px;
+	margin-bottom: 20px;
+	margin-left: 325px;
+}
+
+.container2{
+	width: 350px;
+	/*border: 2px solid red;*/
+	height: 700px;
+}
+
+.container3{
+	width: 1170px;
+	/*border: 2px solid red;*/
+	height: 100px;
+	position: absolute;
+	left: 367px;
+	top: 197px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.container4{
+	width: 1170px;
+	/*border: 2px solid red;*/
+	height: 370px;
+	position: absolute;
+	left: 367px;
+	top: 197px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.container5{
+	width: 1170px;
+	/*border: 2px solid red;*/
+	height: 300px;
+	position: absolute;
+	left: 367px;
+	top: 735px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.top_menu{
+	text-transform: uppercase;
+	font-family: "MuseoSansCyrl-700";
+	font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 22px;
+		
+	}
+.left_menu{
+	font-family: "MuseoSansCyrl-300";
+	font-size: 16px;
+	margin-left: 34px;
+
+    
+}
+
+.left_menu__substrate {
+	margin-left: 34px;
+	width: 200px;
+	height: 40px;
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+	top: -45px;
+	z-index: -1;
+}
+
+.warning_img{
+	position: relative;
+	left: 8px;
+	top: 25px;
+	z-index: 1;
+}
+
+.warning_text{
+	font-family: "MuseoSansCyrl-300";
+	font-size: 16px;
+	position: relative;
+	left: 22px;
+	top: -30px;
+	z-index: 1;
+
+}
+
+.maintitle{
+	font-family: "MuseoSansCyrl-700";
+	font-size: 20px;
+	line-height: 36px;
+	position: relative;
+	left: 44px;
+	margin-top: 44px;
+	margin-bottom: 32px;
+	z-index: 1;
+}
+
+
+input{
+	font-family: "MuseoSansCyrl-700";
+	font-size: 20px;
+	line-height: 24px;
+	position: relative;
+	top: 20px;
+	left: 44px;
+	height: 20px;
+    width: 450px;
+    border: 0;
+    padding: 0px 0;
+    border-bottom: 1px solid #000;
+}
+
+.hint {
+	margin-top: 20px;
+	margin-bottom: -15px;
+	color: #ccc
+}
+.hint a{
+	margin-left: 310px;
+
+}
+
+.email {
+	font-family: "MuseoSansCyrl-700";
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: -30px;
+}
+
+.tab {
+	position: relative;
+	/*left: 22px;*/
+	top: 50px;
+	left: -87px;
+	z-index: 1;
+	height: 0px;
+	width: 90px;
+	border-top: 2px solid #FF8C00;
+	border-bottom: 2px solid #FF8C00;
+	border-radius: 4px;
+
+}
+
+button {
+	font-family: "MuseoSansCyrl-500";
+	font-size: 16px;
+	line-height: 20px;
+	width: 150px;
+	position: relative;
+	left: 44px;
+	top: 65px;
+    border: none;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+    margin: 0;
+    background: #FF8C00;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.removephone {
+	font-family: "MuseoSansCyrl-500";
+	font-size: 16px;
+	line-height: 20px;
+	width: 150px;
+	position: relative;
+	left: 44px;
+	top: 65px;
+    border: 2px solid #898989;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+    margin: 0;
+    background: #FFF;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover,
+button:focus {
+    background: #FF8200;
+}
+
+.removephone:hover,
+.removephone:focus {
+    background: #FFF;
+}
+
+
+
+a {
+    color: blue; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчёркивание */
+    border-bottom: 2px dashed blue
+   }
+
+

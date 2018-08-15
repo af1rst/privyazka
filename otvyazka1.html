@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css" class="css">
+	<title>Document</title>
+</head>
+<body>
+	<img src="img/logo.svg" alt=logo" class="logo">
+	<section>
+		<div class="container">
+		<div class="top_menu">
+			<p class="top_menu__item">Заявки</p>
+			<p class="top_menu__item">Услуги</p>
+			<p class="top_menu__item">Поддержка</p>
+			<p class="top_menu__item">Настройки</p>
+			<div class="tab"></div>
+		</div>
+		</div>
+	</section>
+	<section>
+		<div class="container2">
+		<div class="left_menu">
+
+			<p class="left_menu__item">Пользователи</p>
+			<p class="left_menu__item"><a class="index" href="index.html">Данные QIWI кошелька</a></p>	
+			<div class="left_menu__substrate"></div>
+     	</div>
+	</div>
+	</section>
+	<section>
+		<div class="container3">
+		<div class="warning">
+			<img src="img/warning.svg" alt="" class="warning_img">
+			<p class="warning_text">Вы собираетесь отвязать QIWI Кошелёк. Для работы с сервисом понадобится указать другой<br>
+QIWI Кошелёк. Это требуется в соответствии с публичной офертой.</p>
+		</div>
+	    </div>
+	</section>
+	<section>
+        <div class="container4">
+        	<div class="center_block">
+        		<h1 class="maintitle">Привязанный QIWI Кошелёк</h1>
+        		<p class="hint">Привязанная почта</p>
+        		<p class="email">admin@site.ru</p>
+        		<br>
+        		<br>
+        		<br>
+        		<p class="hint">Привязанный номер</p>
+        		<p class="email">+7 916 *** 78</p>
+        	</div>
+        </div>
+	</section>
+	<section>
+		<div class="container5">
+			<div class="sms_block">
+				<h1 class="maintitle">Для подтверждения вам отправлено SMS с одноразовым кодом
+				</h1>
+				<div className='input-wrapper'>
+                     <input id="codenum" placeholder='Код'/>
+                </div>
+        	    <!-- <span contenteditable class="phone">Телефон</span> -->
+        	    <p class="hint"><a href="#">Отправить повторно</a></p>
+        	    <button type="submit" class="addphone" onclick="myF()">Подтвердить</button>
+			</div> 
+		</div> 
+	</section>
+	<script>
+		function myF(){
+    var a = document.getElementById("codenum").value;
+    if(a==null || a==""){
+    	alert("Введите код");
+    }else{
+    window.location = "otvyazka2.html";
+    }
+}
+	</script>
+</body>
+</html>
